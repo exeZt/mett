@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+:root{
+  --app-width: -webkit-fill-available;
+  --app-height: max-content; /* max-content */
+  --header-heigth: 110px;
+  --app-font: "JetBrains Mono", monospace, sans-serif, Tahoma;
+  --height-fill: -webkit-fill-available;
+  --available: -webkit-fill-available;
+}

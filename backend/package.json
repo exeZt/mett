@@ -1,0 +1,21 @@
+{
+  "name": "metapp",
+  "scripts": {
+    "start": "npx ts-node index.ts",
+    "dev": "nodemon index.ts"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.21",
+    "express": "^4.19.2",
+    "socket-io": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.0",
+    "@types/uuid": "^10.0.0",
+    "jest": "^29.7.0",
+    "mysql2": "^3.11.0",
+    "socket.io": "^4.7.5",
+    "ts-jest": "^29.2.4",
+    "uuid": "^10.0.0"
+  }
+}

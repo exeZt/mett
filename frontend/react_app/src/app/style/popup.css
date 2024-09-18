@@ -1,0 +1,121 @@
+.popup__bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0,0,0,0.5);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s all;
+  z-index: 5;
+}
+
+.popup__bg.active {
+  opacity: 1;
+  pointer-events: all;
+  transition: 0.5s all;
+}
+
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background: rgba(36, 25, 90, 0.67);
+  width: 269px;
+  height: 162px;
+  padding: 25px;
+  border-radius: 15px;
+  transition: 0.5s all;
+}
+.popup__message_text{
+  color: white;
+  font-size: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.popup.active {
+  transform: translate(-50%, -50%) scale(1);
+  transition: 0.5s all;
+}
+.popup input[type="button"]{
+  background-color: rgba(253, 166, 43, 1);
+  width: 281px;
+  height: 65px;
+  color: white;
+  border-radius: 15px;
+  border: 0;
+  font-size: 20px;
+}
+.popupFormer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+}
+.popup__top_panel{
+  width: -webkit-fill-available;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.popup__close_icon{
+  font-size: 24px;
+}
+.popup__bg__lower{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0,0,0,0);
+  pointer-events: none;
+  transition: 0.5s all;
+  z-index: 5;
+}
+.popup__lower{
+  position: absolute;
+  bottom: -17%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background: #FFFFFF;
+  width: 52vh;
+  height: 159px;
+  border-radius: 15px 15px 0px 0px;
+  backdrop-filter: blur(5px);
+  padding: 25px;
+  transition: 0.5s all;
+}
+.popup__bg__lower.active {
+  opacity: 1;
+  pointer-events: all;
+  transition: 0.5s all;
+}
+.popup__lower.active {
+  transform: translate(-50%, -50%) scale(1);
+  transition: 0.5s all;
+}
+.popup__lower input[type="button"]{
+  background-color: #fda62b;
+  width: -webkit-fill-available;
+  height: 65px;
+  color: white;
+  border-radius: 15px;
+  border: 0;
+  font-size: 20px;
+}
+.popupFormer input[type="password"]{
+  width: var(--width-fill);
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 1);
+  color: white;
+  height: 20px;
+  font-size: 16px;
+  background: transparent;
+}
